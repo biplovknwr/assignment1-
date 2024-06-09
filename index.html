@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+<!-- heading  -->
+        <nav class="nav">
+            <h1 class="name">Pizza king</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Order Online</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- body of page  -->
+    <main>
+        <section>
+            <h2>Pizza king</h2>
+            <div class="image">
+                <img src="pizza.jpg" alt="Delicious Pizza">
+            </div>
+            <p>Welcome to our pizza shop, where we bring the authentic taste of Italy right to
+                your neighborhood. Our passion for pizza shines through in every bite, from our
+                hand-tossed dough to our house-made sauces and fresh toppings. Whether you prefer
+                a classic Margherita, a hearty Meat Lover's, or a custom creation of your own, we
+                promise a delicious experience every time. Join us for a slice of pizza perfection
+                in a warm and friendly atmosphere that feels just like home.</p>
+
+        </section>
+        <section>
+            <!-- form to ask for detail to oreder pizzza -->
+            <h2 class="center">Order Your Pizza here!!</h2>
+            <form>
+                <fieldset class="details">
+                    <legend>Pizza Details</legend>
+                    <label for="quantity">Number of Pizzas:</label>
+                    <input type="number" name="quantity" min="1" value="1" required>
+
+
+                    <!--          size of pizza      -->
+                    <label for="size">Size:</label>
+                    <select id="size" name="size" required>
+                        <option value="">Select Size</option>
+                        <option value="small">Small (6 slices)</option>
+                        <option value="medium">Medium (8 slices)</option>
+                        <option value="large">Large (10 slices)</option>
+                        <option value="xlarge">Extra Large (12 slices)</option>
+                    </select>
+
+
+                    <!-- shape ofpizza -->
+                    <label>Shape:</label>
+                    <label><input type="radio" name="shape" value="round" checked> Round</label>
+                    <label><input type="radio" name="shape" value="square"> Square</label>
+
+                    <label>Crust Type:</label>
+                    <label><input type="radio" name="crust" value="thin" checked> Thin Crust</label>
+                    <label><input type="radio" name="crust" value="deep-dish"> Deep Dish</label>
+                    <label><input type="radio" name="crust" value="stuffed"> Stuffed Crust</label>
+                </fieldset>
+
+
+
+                <!--  toppings for pizza -->
+                <fieldset class="details">
+                    <legend class="details">Toppings</legend>
+                    <label><input type="checkbox" value="pepperoni"> Pepperoni</label>
+                    <label><input type="checkbox" value="mushrooms"> Mushrooms</label>
+                    <label><input type="checkbox" value="onions"> Onions</label>
+                    <label><input type="checkbox" value="peppers"> Peppers</label>
+                    <label><input type="checkbox" value="sausage"> Sausage</label>
+                    <label><input type="checkbox" value="extra-cheese"> Extra Cheese</label>
+                    <label><input type="checkbox" value="black-olives"> Black Olives</label>
+                    <label><input type="checkbox" value="pineapple"> Pineapple</label>
+                </fieldset>
+
+
+
+                <fieldset class="details">
+                    <legend>Order Type</legend>
+                    <label><input type="radio" name="order-type" value="takeout" checked> Take Out</label>
+                    <label><input type="radio" name="order-type" value="delivery"> Delivery</label>
+                    <label><input type="radio" name="order-type" value="dine-in"> Dine In</label>
+                </fieldset>
+
+
+
+                <fieldset class="details">
+                    <legend>Delivery Information (if applicable)</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"
+                        placeholder="123-456-7890" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="delivery-date">Delivery Date:</label>
+                    <input type="date" id="delivery-date" name="delivery-date" required>
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+
+
+
+                </fieldset>
+
+                <fieldset class="details">
+                    <legend>Special Instructions</legend>
+                    <textarea name="instructions" rows="4"
+                        placeholder="Any special instructions for your order?"></textarea>
+                </fieldset>
+                <div class="button">
+                    <button type="submit">Place Order</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+    <!--end of main  -->
+    <!--footer  -->
+    <footer>
+        <p>&copy; 2024 Pizza king. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
